@@ -1,0 +1,2 @@
+rootProject.name='LoRaConfig'
+include ':app'
