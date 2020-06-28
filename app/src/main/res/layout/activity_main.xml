@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="Not connected"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp">
+
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editTextBoxSF"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/textViewSF" />
+
+        <EditText
+            android:id="@+id/editTextBoxCodingRate"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/editTextBoxSF"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/textViewCodingRate" />
+
+        <EditText
+            android:id="@+id/editTextBoxFrequency"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/editTextBoxCodingRate"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/textViewFrequency" />
+
+        <TextView
+            android:id="@+id/textViewFrequency"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewCodingRate"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:text="Frequency"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewSF"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:text="SF"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewCodingRate"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewSF"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:text="CodingRate"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="SEND"
+        android:onClick="OnSend"/>
+
+    <Button
+        android:id="@+id/buttonScan"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="1"
+        android:text="@string/btnScan"
+        android:textAlignment="center" />
+
+</LinearLayout>
